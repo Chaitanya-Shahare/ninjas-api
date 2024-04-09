@@ -47,13 +47,12 @@ export class NinjasService {
 
     return this.getNinja(id);
   }
-	
-	removeNinja(id: number) {
-		const toBeRemoved = this.getNinja(id);
 
-		this.ninjas = this.ninjas.filter((ninja) => ninja.id !== id);
+  removeNinja(id: number) {
+    const toBeRemoved = this.getNinja(id);
 
-		return toBeRemoved;
-	}
+    this.ninjas = this.ninjas.filter((ninja) => ninja.id !== id);
 
+    return toBeRemoved;
+  }
 }
